@@ -1,13 +1,30 @@
+import { Mail, Person } from "@mui/icons-material";
 import "./topbar.scss";
 
-const Topbar = () => {
+const Topbar = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className="topbar">
+    <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro">asfdasf</a>
+          <a href="#intro" className="logo">
+            Malang
+          </a>
+          <div className="itemContainer">
+            <Person className="icon" />
+            <span>+91 8851039997</span>
+          </div>
+          <div className="itemContainer">
+            <Mail className="icon" />
+            <span>vinaysehwag14@gmail.com</span>
+          </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
+        </div>
       </div>
     </div>
   );
