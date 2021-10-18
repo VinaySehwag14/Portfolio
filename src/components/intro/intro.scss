@@ -1,5 +1,5 @@
 .intro {
-  background-color: white;
+  background-color: #0a070f;
   display: flex;
 
   .left {
@@ -7,14 +7,16 @@
     overflow: hidden;
 
     .imgContainer {
-      width: 700px;
-      height: 650px;
+      width: 792px;
+      height: 672px;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      justify-content: flex-start;
 
-      img {
-        width: 99%;
-        height: 99%;
+      .imgContainer__image {
+        width: 82%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
@@ -31,14 +33,35 @@
       justify-content: center;
 
       h1 {
-        font-size: 60px;
+        font-size: 100px;
         margin: 10px 0;
+        color: aqua;
       }
       h2 {
-        font-size: 35px;
+        font-size: 45px;
+        color: aqua;
       }
       h3 {
-        font-size: 30px;
+        font-size: 45px;
+        color: aqua;
+
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
+
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
       }
     }
     a {
