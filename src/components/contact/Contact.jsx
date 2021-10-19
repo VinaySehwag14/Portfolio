@@ -1,4 +1,4 @@
-import { Email, GitHub, LinkedIn, Phone, Twitter } from "@mui/icons-material";
+import { Email, GitHub, LinkedIn, Twitter } from "@mui/icons-material";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./contact.scss";
