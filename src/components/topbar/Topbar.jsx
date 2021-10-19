@@ -1,4 +1,4 @@
-import { Mail, Person } from "@mui/icons-material";
+import { Mail } from "@mui/icons-material";
 import "./topbar.scss";
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
@@ -9,10 +9,6 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           <a href="#intro" className="logo">
             Malang
           </a>
-          <div className="itemContainer">
-            <Person className="icon" />
-            <span>+91 8851039997</span>
-          </div>
           <div className="itemContainer">
             <Mail className="icon" />
             <span>vinaysehwag14@gmail.com</span>

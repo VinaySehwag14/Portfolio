@@ -1,3 +1,4 @@
+import { GitHub } from "@mui/icons-material";
 import "./portfolio.scss";
 
 const Portfolio = () => {
@@ -15,6 +16,15 @@ const Portfolio = () => {
             <img className="item__image" src="assets/ecommerce.svg" alt="" />
             <h3>E-commerce App</h3>
           </a>
+          <div className="code__link">
+            <a
+              href="https://github.com/VinaySehwag14/E-comm-Frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHub className="github" />
+            </a>
+          </div>
         </div>
         <div className="item">
           <a
@@ -25,6 +35,15 @@ const Portfolio = () => {
             <img className="item__image" src="assets/ecommerce.svg" alt="" />
             <h3>E-commerce App</h3>
           </a>
+          <div className="code__link">
+            <a
+              href="https://github.com/VinaySehwag14/E-comm-Frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHub className="github" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

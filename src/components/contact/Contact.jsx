@@ -34,10 +34,6 @@ const Contact = () => {
           <h1 className="contact-title">Contact Me Here</h1>
           <div className="contact-info">
             <div className="contact-info-item">
-              <Phone className="contact_icon" />
-              +91 8851039997
-            </div>
-            <div className="contact-info-item">
               <Email className="contact_icon" />
               vinaysehwag14@gmail.com
             </div>
@@ -83,7 +79,7 @@ const Contact = () => {
                 name="message"
               ></textarea>
               <button type="submit">Send</button>
-              {done && <p> Thnak you </p>}
+              {done && <p> Sent </p>}
             </form>
           </div>
         </div>

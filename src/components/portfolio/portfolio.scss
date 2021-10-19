@@ -10,6 +10,11 @@
     font-size: 50px;
     height: 78px;
     margin-top: 45px;
+    color: white;
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
   ul {
@@ -17,6 +22,12 @@
     padding: 0;
     display: flex;
     list-style: none;
+
+    @include mobile {
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     li {
       font-size: 15px;
@@ -43,6 +54,10 @@
     flex-wrap: wrap;
     height: 380px;
 
+    @include mobile {
+      width: 100%;
+    }
+
     .item {
       width: 230px;
       height: 235px;
@@ -57,16 +72,28 @@
       transition: all 0.5s ease;
       cursor: pointer;
       overflow: hidden;
+
+      @include mobile {
+        width: 150px;
+        height: 120px;
+      }
+
+      h3 {
+        position: absolute;
+        font-size: 20px;
+        margin-top: -94px;
+        margin-left: 36px;
+        @include mobile {
+          font-size: 15px;
+          margin-top: -60px;
+          margin-left: 10px;
+        }
+      }
+
       a {
         position: absolute;
         z-index: 0;
 
-        h3 {
-          position: absolute;
-          font-size: 20px;
-          margin-top: -94px;
-          margin-left: 28px;
-        }
         img {
           width: 100%;
           height: 80%;
@@ -74,10 +101,28 @@
           z-index: 1;
         }
       }
+      .code__link {
+        display: flex;
+        margin-top: 162px;
+        margin-right: 24px;
+        a {
+          display: flex;
+          .github {
+            font-size: 35px;
+            color: #551a8b;
+            cursor: pointer;
+          }
+        }
+      }
       &:hover {
         background-color: #0a070f;
+
         img {
           opacity: 0.2;
+          z-index: 0;
+        }
+        .github {
+          color: white;
         }
       }
     }

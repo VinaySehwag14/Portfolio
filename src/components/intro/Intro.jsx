@@ -29,7 +29,7 @@ const Intro = () => {
             Full <span ref={textref}> </span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#skills">
           <KeyboardArrowDown className="icon" />
         </a>
       </div>

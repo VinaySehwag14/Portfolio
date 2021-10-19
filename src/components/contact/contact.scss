@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .contact {
   height: 100vh;
   position: relative;
@@ -6,6 +8,10 @@
   .contact-wrapper {
     padding: 50px;
     display: flex;
+    @include mobile {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
 
     .contact-left {
       flex: 1;
@@ -14,6 +20,13 @@
         font-size: 60px;
         width: 80%;
         color: white;
+
+        @include mobile {
+          font-size: 30px;
+          width: 100%;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
       }
       .contact-info {
         .contact-info-item {
@@ -22,6 +35,11 @@
           font-weight: 300;
           width: 70%;
           color: white;
+
+          @include mobile {
+            width: 110%;
+            margin: 20px 0px;
+          }
 
           .contact_icon {
             width: 30px;
@@ -36,6 +54,11 @@
           margin-left: 22px;
           align-items: flex-start;
           flex-direction: column;
+          @include mobile {
+            flex-direction: row;
+            justify-content: center;
+          }
+
           .contact-sites_icon {
             color: white;
             font-size: 30px;
@@ -54,6 +77,9 @@
         font-size: 20px;
         font-weight: 300;
         color: white;
+        @include mobile {
+          font-size: 16px;
+        }
 
         form {
           margin-top: 20px;
@@ -67,6 +93,10 @@
             margin: 10px 0px;
             font-size: 14px;
             padding-left: 10px;
+
+            @include mobile {
+              height: 40px;
+            }
           }
           textarea {
             width: 80%;
@@ -83,11 +113,26 @@
             margin: 2px 1px;
             width: 150px;
             border-radius: 1.25rem;
-            background-color: red;
+            background-color: #dc143c;
             color: white;
             font-size: 21px;
             font-weight: 500;
             cursor: pointer;
+          }
+          p {
+            font-size: 100;
+            color: red;
+            margin-top: 20px;
+            margin-left: 20px;
+          }
+
+          @include mobile {
+            margin-top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -40px;
+            margin-left: 10px;
+            overflow: hidden;
           }
         }
       }
